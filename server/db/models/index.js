@@ -14,7 +14,7 @@ const Room = require('./room')
  *
  *    BlogPost.belongsTo(User)
  */
-
+Student.belongsTo(User, {foreignKey:'studentID', targetKey: 'userID'})
 /**
  * We'll export all of our models here, so that any time a module needs a model,
  * we can just require it from 'db/models'

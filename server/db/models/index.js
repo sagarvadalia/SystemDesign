@@ -5,7 +5,9 @@ const Administrator = require('./administrator')
 const Student = require('./student')
 const Researcher = require('./researcher')
 const Minor = require('./minor')
+const Major = require('./major')
 const Class = require('./class')
+const Period = require('./period')
 const Day = require('./day')
 const Room = require('./room')
 /**
@@ -31,5 +33,7 @@ module.exports = {
   Class,
   Minor,
   Day,
-  Room
+  Room,
+  Major,
+	Period
 }

@@ -3,31 +3,31 @@ const {INTEGER} = require('sequelize')
 const Sequelize = require('sequelize')
 const db = require('../db')
 
-const Department = db.define('Department', {
+const Department = db.define('department', {
   deptID: {
-    type: INTEGER,
-    primaryKey: true
+    type: Sequelize.INTEGER,
+    primaryKey: true,
   },
   deptName: {
-    type: sequelize.String,
+    type: Sequelize.STRING,
     allowNull: false,
-    validate: {notEmpty: true, isAlpha: true}
+    validate: {notEmpty: true, isAlpha: true},
   },
   deptEmail: {
-    type: sequelize.String,
+    type: Sequelize.STRING,
     allowNull: false,
-    validate: {notEmpty: true, isEmail: true}
+    validate: {notEmpty: true, isEmail: true},
   },
   deptPhone: {
-    type: sequelize.String,
+    type: Sequelize.STRING,
     allowNull: false,
-    validate: {notEmpty: true, isPhone: true}
+    validate: {notEmpty: true, isPhone: true},
   },
   deptManager: {
-    type: sequelize.String,
+    type: Sequelize.STRING,
     allowNull: false,
-    validate: {notEmpty: true, isAlpha: true}
-  }
+    validate: {notEmpty: true, isAlpha: true},
+  },
 })
 
 module.exports = Department

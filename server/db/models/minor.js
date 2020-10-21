@@ -1,21 +1,16 @@
-const crypto = require('crypto')
-const {INTEGER} = require('sequelize')
 const Sequelize = require('sequelize')
 const db = require('../db')
 
-const Class = db.define('class', {
-  classID: {
+const Minor = db.define('minor', {
+  minorID: {
     type: Sequelize.INTEGER,
     primaryKey: true,
   },
-  classSection: {
+  minorName: {
     notEmpty: true,
     type: Sequelize.STRING,
-  },
-  numOfSeats: {
-    type: Sequelize.INTEGER,
-    allowNull: true,
+    validate: {notEmpty: true, isAlpha: true},
   },
 })
 
-module.exports = Department
+module.exports = Minor

@@ -5,7 +5,7 @@ const db = require('../db')
 
 const Department = db.define('department', {
   deptID: {
-    type: INTEGER,
+    type: Sequelize.INTEGER,
     primaryKey: true,
   },
   deptName: {

@@ -8,6 +8,9 @@ const Minor = require('./minor')
 const Major = require('./major')
 const Class = require('./class')
 const Period = require('./period')
+const Timeslot = require('./timeslot')
+const Building = require('./building')
+const Catalog = require('./catalog')
 const Day = require('./day')
 const Room = require('./room')
 const Advisor = require('./advisor')
@@ -37,5 +40,9 @@ module.exports = {
 	Day,
 	Room,
 	Major,
-	Period
+	Period,
+	Course,
+	Timeslot,
+	Building,
+	Catalog,
 }

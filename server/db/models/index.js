@@ -8,6 +8,9 @@ const Minor = require('./minor')
 const Major = require('./major')
 const Class = require('./class')
 const Period = require('./period')
+const Timeslot = require('./timeslot')
+const Building = require('./building')
+const Catalog = require('./catalog')
 const Day = require('./day')
 const Room = require('./room')
 /**
@@ -24,16 +27,19 @@ const Room = require('./room')
  * instead of: const User = require('../db/models/user')
  */
 module.exports = {
-  User,
-  Department,
-  Faculty,
-  Administrator,
-  Researcher,
-  Student,
-  Class,
-  Minor,
-  Day,
-  Room,
-  Major,
-	Period
+	User,
+	Department,
+	Faculty,
+	Administrator,
+	Researcher,
+	Student,
+	Class,
+	Minor,
+	Major,
+	Period,
+	Course,
+	Timeslot,
+	Building,
+	Catalog,
+  Room
 }

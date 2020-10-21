@@ -1,5 +1,6 @@
 const User = require('./user')
 const Department = require('./department')
+const Faculty = require('./faculty')
 
 /**
  * If we had any associations to make, this would be a great place to put them!
@@ -17,4 +18,5 @@ const Department = require('./department')
 module.exports = {
   User,
   Department,
+  Faculty,
 }

@@ -8,6 +8,7 @@ const Minor = require('./minor')
 const Major = require('./major')
 const Class = require('./class')
 const Period = require('./period')
+const Day = require('./day')
 /**
  * If we had any associations to make, this would be a great place to put them!
  * ex. if we had another model called BlogPost, we might say:
@@ -22,14 +23,15 @@ const Period = require('./period')
  * instead of: const User = require('../db/models/user')
  */
 module.exports = {
-	User,
-	Department,
-	Faculty,
-	Administrator,
-	Researcher,
-	Student,
-	Class,
-	Minor,
-	Major,
+  User,
+  Department,
+  Faculty,
+  Administrator,
+  Researcher,
+  Student,
+  Class,
+  Minor,
+  Day,
+  Major,
 	Period
 }

@@ -4,7 +4,8 @@ const Faculty = require('./faculty')
 const Administrator = require('./administrator')
 const Student = require('./student')
 const Researcher = require('./researcher')
-
+const Minor = require('./minor')
+const Class = require('./class')
 /**
  * If we had any associations to make, this would be a great place to put them!
  * ex. if we had another model called BlogPost, we might say:
@@ -24,5 +25,7 @@ module.exports = {
   Faculty,
   Administrator,
   Researcher,
-  Student
+  Student,
+  Class,
+  Minor
 }

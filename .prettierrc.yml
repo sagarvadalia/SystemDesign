@@ -7,6 +7,6 @@ singleQuote: true # false
 # jsxBracketSameLine: false # false
 # arrowParens: avoid # avoid | always
 useTabs: true #true
-trailingComma: false #false
+trailingComma: none #none
 bracketSpacing: true #true
 jsxBracketSameLine: true #true

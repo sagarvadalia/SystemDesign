@@ -18,4 +18,4 @@ const Class = db.define('class', {
   },
 })
 
-module.exports = Class
+module.exports = Department

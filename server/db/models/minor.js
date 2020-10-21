@@ -7,7 +7,7 @@ const Minor = db.define('minor', {
     primaryKey: true,
   },
   minorName: {
-    notEmpty: true,
+    allowNull: false,
     type: Sequelize.STRING,
     validate: {notEmpty: true, isAlpha: true},
   },

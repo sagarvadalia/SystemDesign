@@ -11,13 +11,13 @@ const User = db.define('user', {
   userName: {
     type: Sequelize.STRING,
     allowNull: false,
-    validate: {notEmpty: true}
+    validate: {notEmpty: true, isAlpha: true}
   },
   userEmail: {
     type: Sequelize.STRING,
     unique: true,
     allowNull: false,
-    validate: {notEmpty: true}
+    validate: {notEmpty: true, isEmail: true}
   },
   userPassword: {
     type: Sequelize.STRING,
@@ -30,17 +30,17 @@ const User = db.define('user', {
   userPhone: {
     type: Sequelize.STRING,
     allowNull: false,
-    validate: {notEmpty: true}
+    validate: {notEmpty: true, isPhone: true}
   },
   userAddress: {
     type: Sequelize.STRING,
     allowNull: false,
-    validate: {notEmpty: true}
+    validate: {notEmpty: true, isAlphanumeric: true}
   },
   userType: {
     type: Sequelize.STRING,
     allowNull: false,
-    validate: {notEmpty: true}
+    validate: {notEmpty: true, isAlpha: true}
   },
   salt: {
     type: Sequelize.STRING,

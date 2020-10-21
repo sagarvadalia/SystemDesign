@@ -8,6 +8,10 @@ const Minor = require('./minor')
 const Major = require('./major')
 const Class = require('./class')
 const Period = require('./period')
+const Timeslot = require('./timeslot')
+const Building = require('./building')
+const Catalog = require('./catalog')
+
 /**
  * If we had any associations to make, this would be a great place to put them!
  * ex. if we had another model called BlogPost, we might say:
@@ -31,5 +35,9 @@ module.exports = {
 	Class,
 	Minor,
 	Major,
-	Period
+	Period,
+	Course,
+	Timeslot,
+	Building,
+	Catalog
 }

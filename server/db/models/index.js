@@ -14,14 +14,16 @@ const Building = require('./building')
 const Catalog = require('./catalog')
 const Day = require('./day')
 const Room = require('./room')
+const Advisor = require('./advisor')
 const Semester = require('./semester')
-/**
+
  * If we had any associations to make, this would be a great place to put them!
  * ex. if we had another model called BlogPost, we might say:
  *
  *    BlogPost.belongsTo(User)
  */
-
+Student.belongsToMany(Faculty, { through: Advisor })
+Faculty.belongsToMany(Student, { through: Advisor })
 /**
  * We'll export all of our models here, so that any time a module needs a model,
  * we can just require it from 'db/models'
@@ -37,6 +39,8 @@ module.exports = {
 	Student,
 	Class,
 	Minor,
+	Day,
+	Room,
 	Major,
 	Period,
 	Course,
@@ -44,5 +48,6 @@ module.exports = {
 	Building,
 	Catalog,
 	Room,
-	Semester
+	Semester,
+  Advisor
 }
